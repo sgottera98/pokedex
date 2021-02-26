@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://pokemongophilippines.files.wordpress.com/2016/08/whosthatpokemon_1349921665_7.jpg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  margin: 1rem auto;
+  border-radius: 5px;
+  text-align: center;
+  transition: 500ms;
+  background: #ffcc03;
+  width: 500px;
+}
+
+h1:hover {
+  transform: scale(1);
+}
+
+div {
+  text-align: center;
+  margin: 5px ;
+  display: inline-block;
+}
+
+div span h2 {
+  margin: 20px 100px;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+div span {
+  text-align: left;
+  vertical-align: top;
+  background: rgb(142, 142, 219);
+  height: 506px;
+  width: 360px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 500ms;
+  background-image: url(https://p1.hiclipart.com/preview/292/997/229/blanks-classic-cards-pokemon-trading-card-png-clipart.jpg);
+}
+
+div span:hover {
+  transform: scale(1.1);
+}
+
+div span img {
+  width: 200px;
+  margin: 60px 0 0 80px ;
+  
+}
+
+div span p {
+  margin: 50px 0 0 30px;
+}
+
+button {
+  cursor: pointer;
+  margin: 30px 60px;
+  height: 100px;
+  vertical-align: middle;
+  background: none;
+  border: none;
+  transition: 300ms;
+  
+}
+
+button:hover {
+  transform: scale(1.2);
+}
