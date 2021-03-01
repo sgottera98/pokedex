@@ -1,0 +1,115 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: rem(50) 0 rem(285) 0;
+    
+    .wrap-header-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        color: $color-sonic-silver;
+        padding: 0 rem(5);
+
+
+        .header-title {
+            font-weight: $bold;
+            font-size: rem(16);
+            line-height: rem(24);
+            letter-spacing: .1px;
+        }
+
+        .supertitle{
+            margin-top: rem(17);
+            font-size: rem(36);
+            line-height: rem(43);
+            color: $color-black;
+        }
+
+        .header-subtitle {
+            margin-top: rem(27);
+            font-weight: $regular;
+            font-size: rem(24);
+            line-height: rem(38);
+            letter-spacing: .2px;
+            text-align: center;
+        }
+        
+        .wrap-header-button {
+            margin-top: rem(50);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .button-playstore, .button-apple-store {
+                width: rem(236);
+                height: rem(68);
+                border-radius: rem(30);
+                font-weight: $bold;
+                color: $color-white;
+                font-size: rem(24);
+                line-height: rem(36);
+                letter-spacing: .1px;
+            }
+            
+            .button-playstore {
+                background: $color-red-orange;
+                margin-bottom: rem(16);
+            }
+            
+            .button-apple-store {
+                border: solid 1px $color-red-orange;
+                color: $color-red-orange;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-lg) {
+    header {
+        background-image: url("../../assets/images/header-background.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: $color-white;
+        padding: rem(73) rem(252) rem(146) rem(252);
+        
+        .wrap-header-content {
+    
+            .header-title {
+                font-size: rem(24);
+                line-height: rem(36);
+                color: $color-white;
+            }
+    
+            .supertitle{
+                margin-top: rem(17);
+                color: $color-white;
+            }
+    
+            .header-subtitle {
+                font-size: rem(24);
+                color: $color-white;
+            }
+            
+            .wrap-header-button {
+                flex-direction: row;
+                margin-top: rem(54);
+        
+                .button-playstore {
+                    background: $color-red-orange;
+                    margin-right: rem(15);
+                }
+                
+                .button-apple-store {
+                    color: $color-white;
+                    border: solid 1px $color-white;
+                    margin-left: rem(15);
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,89 @@
+.banner {
+    width: 100vw;
+    height: rem(516);
+    background: $color-space-cadet;
+    color: $color-white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: rem(120) rem(38) rem(110) rem(38);
+    
+    .banner-title {
+        font-size: rem(40);
+        font-weight: $bold;
+        line-height: rem(57);
+        margin-bottom: rem(20);
+    }
+    
+    .banner-subtitle {
+        font-weight: $regular;
+        font-size: rem(24);
+        line-height: rem(38);
+        color: $color-light-gray;
+        margin-bottom: rem(60);
+    }
+
+    .banners-buttons {
+        
+        .button-playstore-buy, .button-apple-try {
+            color: $color-white;
+            width: 137px;
+            height: 64px;
+            margin: rem(7);
+            border-radius: rem(10);
+            font-weight: $bold;
+            font-size: 16px;
+            line-height: rem(28);
+        }
+        
+        .button-playstore-buy {
+            background: $color-red-orange;   
+        }
+        
+        .button-apple-try {
+            border: 1px solid $color-white; 
+        }
+    }
+    
+}
+
+@media (min-width: $desktop-lg) {
+    
+    .banner {
+        height: rem(564);
+        background: url(../../assets/images/background-banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: rem(146) rem(300) rem(131) rem(300);
+        
+        .banner-title {
+            margin-bottom: rem(20);
+        }
+        
+        .banner-subtitle {
+            color: $color-white;
+            margin-bottom: rem(60);
+        }
+        
+        .banners-buttons {
+            
+            .button-playstore-buy, .button-apple-try {
+                width: auto;
+                height: auto;
+                padding: rem(18) rem(31) rem(18) rem(31);
+
+            }
+
+            .button-playstore-buy {
+
+            }
+
+            .button-apple-try {
+
+            }
+        }
+    }
+}

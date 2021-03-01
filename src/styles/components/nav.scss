@@ -1,0 +1,125 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(15) rem(25) rem(40) rem(25);
+    position: relative;
+
+
+    .wrap-nav-logo {
+        width: rem(104);
+    }
+
+    .img-nav-logo {
+        width: 100%;
+    }
+
+    .wrap-nav-menu {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        right: -100rem;
+
+        opacity: 0;
+        background-color: $color-red-orange;
+        
+        overflow: hidden;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        padding: rem(80) rem(25) rem(40) rem(25);
+        transition: right .5s, opacity .3s ease-out;
+
+        &.is-open {
+            right: 0;
+            opacity: 1;
+            color: $color-white;
+        }
+    }
+    
+    .hamburger-menu {
+        width: rem(20);
+        height: rem(16);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative; 
+        
+        &.is-open {
+            right: rem(25);
+            position: absolute;
+        }
+    }
+    
+    .hamburger-menu-line {
+        width: 100%;
+        height: 3px;
+        border-radius: rem(5);
+        background-color: $color-sonic-silver;
+        z-index: 2;
+        transition: all .5s ease;
+        
+        &.is-open {
+            position: absolute;
+            top: 50%;
+            background: $color-white;
+            &:first-child {
+                transform: rotate(45deg);
+            }
+
+            &:last-child {
+                display: none;
+
+            }
+
+            &:nth-child(2n) {
+                transform: rotate(-45deg);
+
+            }
+        }
+    }
+    
+}
+
+@media (min-width: $desktop-lg) {
+    nav {
+        padding: rem(25) rem(50) rem(25) rem(90);
+    
+        .wrap-nav-logo {
+            width: rem(206);
+        }
+
+        .wrap-nav-menu {
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            justify-content: flex-end;
+            flex-direction: row;
+            position: relative;
+            background: transparent;
+            right: 0;
+            padding: 0;
+         }
+    
+        .nav-menu-item {
+            margin-right: rem(114);
+            font-weight: $regular;
+            font-size: $font-md;
+            line-height: rem(28);
+            letter-spacing: 0.2px;
+            transition: color .3s ease;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color: $color-red-orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import "sections/FirstSection";
+@import "sections/SecondSection";
+@import "sections/ThirdSection";
+@import "sections/FourthSection";
+
+section {
+    width: 100vw;
+    height: auto;
+
+    .section-subtitle {
+        font-weight: $bold;
+        font-size: rem(24);
+        line-height: rem(36);
+        letter-spacing: .1px;
+        color: $color-red-orange;
+    }
+
+    .section-title {
+        font-weight: $bold;
+        font-size: rem(40);
+        line-height: rem(36);
+        letter-spacing: .2px;
+        margin: rem(40) 0 rem(50) 0;
+        color: $color-black;
+    }
+
+    .section-description {
+        font-weight: $bold;
+        font-size: rem(24);
+        line-height: rem(36);
+        letter-spacing: .2px;
+        color: $color-sonic-silver;
+        margin-bottom: rem(40);
+
+    }
+}
+
+@media (min-width: $desktop-lg) {
+    section {
+        width: 100vw;
+        height: rem(807);
+
+        .section-title {
+            margin: rem(17) 0 rem(27) 0;
+        }
+    }
+}

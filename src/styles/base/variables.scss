@@ -1,0 +1,38 @@
+
+
+$color-white: #fff;
+$color-black: #000;
+$color-space-cadet: #252B42;
+$color-red-orange: #FA4A0C;
+$color-sonic-silver: #737373;
+$color-space-cadet: #252B42;
+$color-light-gray:#BDBDBD;
+
+// Fonts
+$font-title: "Poppins";
+$font-primary: "Montserrat";
+$font-family: $font-primary, "Helvetica", "Arial", "sans-serif";
+
+// Font Weights
+$light: 300;
+$regular: 500;
+$bold: 700;
+
+// Fonts Sizes
+$font-sm: rem(12);
+$font-md: rem(16);
+$font-lg: rem(44);
+$font-xl: rem(58);
+$font-xxl: rem(70);
+
+// Breakpoints
+$phone-sm: 576px;
+$tablet-md: 768px;
+$desktop-lg: 992px;
+$desktop-xl: 1200px;
+$desktop-xxl: 1600px;
+
+$container-lg: 750px;
+$container-xl: 970px;
+$container-xxl: 1400px;
+
