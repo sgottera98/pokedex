@@ -1,0 +1,10 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.center button {
+    margin: 3rem 0 0 0;
+    background: none;
+    border: none;
+}

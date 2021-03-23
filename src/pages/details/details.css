@@ -1,0 +1,39 @@
+.card-details {
+    width: 100%;
+    position: relative;
+    padding-bottom: 5rem ;
+    /* padding-top: 8vh; */
+    background: rgba(255, 255, 255, 60%);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-details h2 {
+    margin-top: 12vh;
+}
+.card-details img {
+    width: 60vw;
+    max-width: 300px;
+}
+
+.button-next, .button-prev  {
+    /* display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); */
+    margin: 1rem 0 2rem 0;
+    padding: 0 1rem 0 1rem; 
+}
+
+.button-next {
+    /* right: 0; */
+    margin-left: 4rem;
+    float: right;
+}
+
+.button-prev {
+    /* left: 0; */
+    margin-right: 4rem;
+    float: left;
+}
+

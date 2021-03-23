@@ -1,0 +1,125 @@
+
+.container-cards {
+    padding: 0.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+  }
+  
+  .cards {
+    display: inline-block;
+    margin: 1rem;
+    border: solid 1px;
+    border-radius: 5px;
+    width: 90%;
+    height: 28rem;
+    vertical-align: top;
+    text-align: center;
+    color: black;
+    transition: 300ms;
+    background-image: url(https://p1.hiclipart.com/preview/292/997/229/blanks-classic-cards-pokemon-trading-card-png-clipart.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 28rem;
+  }
+  
+  .cards:hover {
+    transform: none;
+  }
+  
+  .cards h2 {
+    margin-top: 1.3rem;
+    font-weight: bold;
+    font-size: 150%;
+  }
+  
+  .cards img {
+    /* border: solid 1px; */
+    /* position: static; */
+    margin-top: -0.1rem;
+    height: 39%;
+    width: 76%;
+    border-radius: 2px;
+  }
+  
+  .cards p {
+    display: flex;
+    margin: 3rem;
+    justify-content: center;
+    top: 100px;
+    font-size: 20px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media screen and (min-width: 580px) {
+     .container-cards {
+       padding: 1rem;
+       display: grid;
+       grid-template-columns: 50% 50%;
+     }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+    }
+  
+    .container-cards {
+        padding: 4rem;
+        display: grid;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    /*container desktop */
+  
+    .container {
+        max-width: 1540px;
+        margin: 0 auto;
+    }
+  
+    .container-cards {
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+    }
+  
+    .cards:hover {
+        transform: scale(1.2);
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
+  
+  @media screen and (min-width: 1790px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+  }
+  
+  @media screen and (min-width: 2000px) {
+    .container-cards {
+      display: grid;
+      grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    }
+  }
